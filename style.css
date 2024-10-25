@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+}
+
+#advice-box {
+  text-align: center;
+  width: 35%;
+  border-radius: 5%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 90px;
+  min-height: 35%;
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#advice-num {
+  margin-top: 5%;
+  font-size: smaller;
+  color: hsl(150, 100%, 66%);
+}
+#quote-box {
+  margin-top: 15px;
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+#image {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+}
+img {
+  width: 80%;
+}
+
+#button {
+  width: 60px;
+  height: 60px;
+  background-color: hsl(218, 23%, 16%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25px;
+  padding: 10px;
+  background-color: hsl(150, 100%, 66%);
+  background-image: url(icon-dice.svg); /* Ensure the image path is correct */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+#button:active,
+#button:hover {
+  position: absolute;
+  opacity: 1;
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 768px) {
+  #advice-box {
+    width: 80%;
+  }
+
+  #quote-box {
+    font-size: 24px;
+  }
+  #button:hover {
+    box-shadow: none;
+  }
+
+#button:active {
+  position: absolute;
+  opacity: 1;
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+}
