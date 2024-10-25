@@ -40,6 +40,7 @@ body {
   color: hsl(193, 38%, 86%);
   font-size: 28px;
 }
+
 #image {
   position: absolute;
   width: 100%;
@@ -47,6 +48,10 @@ body {
 }
 img {
   width: 80%;
+}
+
+.m{
+  display: none;
 }
 
 #button {
@@ -74,9 +79,16 @@ img {
 @media (max-width: 768px) {
   #advice-box {
     width: 80%;
+    min-height: 24%;
   }
   #button:hover {
     box-shadow: none;
+  }
+  .d{
+    display: none;
+  }
+  .m{
+    display: inline;
   }
 
 #button:active {
